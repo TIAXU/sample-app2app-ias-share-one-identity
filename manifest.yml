@@ -1,0 +1,16 @@
+---
+applications:
+  - name: backendapp-tia
+    path: backend
+    memory: 64M
+    routes:
+    - route: backendapp-tia.cfapps.eu12.hana.ondemand.com
+    services:
+    - name: clicreIas
+  - name: frontendapp-tia
+    path: frontend
+    memory: 64M
+    routes:
+    - route: frontendapp-tia.cfapps.eu12.hana.ondemand.com
+    services:
+    - name: clicreIas
